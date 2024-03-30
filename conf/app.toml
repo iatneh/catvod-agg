@@ -1,1 +1,6 @@
-FileName = "api.json"
+[General]
+FileName = "source.json"
+ToFilePath = "agg_result.json"
+
+[Logger]
+LogLevel = "debug"
