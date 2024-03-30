@@ -61,6 +61,10 @@ func aggregationMultiSiteInfo() (*models.MultiApiConfig, error) {
 }
 
 func getSiteApiConfig(totalList *models.MultiApiConfig, site models.SingleApiConfig) error {
+	if site.Type == "single" {
+		totalList.Urls = append(totalList.Urls, site)
+		return nil
+	}
 	var apiContent models.MultiApiConfig
 	client := resty.New()
 	resp, err := client.R().Get(site.Url)
@@ -79,6 +83,13 @@ func getSiteApiConfig(totalList *models.MultiApiConfig, site models.SingleApiCon
 	}
 	for _, urlDetail := range apiContent.Urls {
 		if searchUrlExists(totalList, urlDetail) {
+			continue
+		}
+		// 测试链接是否有效
+		_, err := client.R().Get(urlDetail.Url)
+		if err != nil {
+			logrus.Warnf("check url fail,site:%s url name:%s url:%s %s",
+				site.Name, urlDetail.Name, urlDetail.Url, err)
 			continue
 		}
 		urlDetail.Name = site.Name + "-" + urlDetail.Name

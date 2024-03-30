@@ -1,6 +1,6 @@
 [General]
 FileName = "source.json"
-ToFilePath = "agg_result.json"
+ToFilePath = "a.json"
 
 [Logger]
-LogLevel = "debug"
+LogLevel = "info"

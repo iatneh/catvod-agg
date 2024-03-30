@@ -1,22 +1,37 @@
 [
   {
+    "name": "liu673cn",
+    "type": "single",
+    "url": "https://gcore.jsdelivr.net/gh/liu673cn/box@main/m.json"
+  },
+  {
+    "name": "星云日记",
+    "type": "single",
+    "url": "http://itvbox.cc/可视TV/云星日记/仓库.json"
+  },
+  {
     "name": "小盒子多仓",
+    "type": "multi",
     "url": "http://xhztv.top/tvbox.txt"
   },
   {
     "name": "毒盒多仓",
+    "type": "multi",
     "url": "https://tv.youdu.fan:666"
   },
   {
     "name": "欧歌多仓",
+    "type": "multi",
     "url": "http://m.nxog.top/nxog/ou1.php?url=http://tv.nxog.top&b=欧歌"
   },
   {
     "name": "业余打发多仓",
+    "type": "multi",
     "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/qq.json"
   },
   {
     "name": "运输车多仓",
+    "type": "multi",
     "url": "https://weixine.net/api.json"
   }
 ]

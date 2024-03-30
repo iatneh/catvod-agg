@@ -20,6 +20,7 @@ type LogConfig struct {
 type GeneralConfig struct {
 	FileName   string // 多站配置文件
 	ToFilePath string // 聚合结果输出路径
+	OtherSites string // 其他单仓地址
 }
 
 var (
