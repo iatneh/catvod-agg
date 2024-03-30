@@ -2,12 +2,87 @@
   {
     "name": "liu673cn",
     "type": "single",
-    "url": "https://gcore.jsdelivr.net/gh/liu673cn/box@main/m.json"
+    "url": "https://raw.kkgithub.com/liu673cn/box/main/m.json"
   },
   {
-    "name": "星云日记",
+    "name": "小盒子接口",
     "type": "single",
-    "url": "http://itvbox.cc/可视TV/云星日记/仓库.json"
+    "url": "http://xhztv.top/xhz"
+  },
+  {
+    "name": "小盒子4K接口",
+    "type": "single",
+    "url": "http://xhztv.top/4k.json"
+  },
+  {
+    "name": "饭太硬",
+    "type": "single",
+    "url": "http://饭太硬.top/tv"
+  },
+  {
+    "name": "肥猫",
+    "type": "single",
+    "url": "http://我不是.肥猫.live/接口禁止贩卖"
+  },
+  {
+    "name": "摸鱼4K接口",
+    "type": "single",
+    "url": "http://我不是.摸鱼儿.top"
+  },
+  {
+    "name": "失眠的夜接口",
+    "type": "single",
+    "url": "http://清清.摸鱼儿.top"
+  },
+  {
+    "name": "春盈天下(有直播)",
+    "type": "single",
+    "url": "https://wds.ecsxs.com/230989.json"
+  },
+  {
+    "name": "巧技线路",
+    "type": "single",
+    "url": "https://100km.top/0"
+  },
+  {
+    "name": "天微影视",
+    "type": "single",
+    "url": "http://tvkj.top/DC/tvys/svip.json"
+  },
+  {
+    "name": "俊佬线路",
+    "type": "single",
+    "url": "http://home.jundie.top:81/top98.json"
+  },
+  {
+    "name": "讴歌线路",
+    "type": "single",
+    "url": "http://tv.nxog.top/m/111.php?ou=%E6%AC%A7%E6%AD%8C&mz=index2&xl=&jar=index2"
+  },
+  {
+    "name": "星辰线路",
+    "type": "single",
+    "url": "http://8.210.232.168/xc.json"
+  },
+  {
+    "name": "道长线路",
+    "type": "single",
+    "url": "https://pastebin.com/raw/5NHaxyGR"
+  },
+  {
+    "name": "小马线路",
+    "type": "single",
+    "url": "https://szyyds.cn/tv/x.json"
+  },
+  {
+    "name": "dxawi0线路",
+    "type": "single",
+    "url": "https://xhdwc.tk/0"
+  },
+  {
+    "name": "巧儿",
+    "type": "single",
+    "url": "http://pandown.pro/tvbox/tvbox.json"
   },
   {
     "name": "小盒子多仓",
@@ -25,13 +100,13 @@
     "url": "http://m.nxog.top/nxog/ou1.php?url=http://tv.nxog.top&b=欧歌"
   },
   {
-    "name": "业余打发多仓",
-    "type": "multi",
-    "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/qq.json"
-  },
-  {
     "name": "运输车多仓",
     "type": "multi",
     "url": "https://weixine.net/api.json"
+  },
+  {
+    "name": "摸鱼多仓",
+    "type": "multi",
+    "url": "http://小鱼干.摸鱼儿.top"
   }
 ]
