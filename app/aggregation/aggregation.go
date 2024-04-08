@@ -2,14 +2,14 @@ package aggregation
 
 import (
 	"bytes"
-	"catvod-agg/app/conf"
-	"catvod-agg/app/models"
 	"encoding/json"
 	"github.com/go-resty/resty/v2"
 	"github.com/marcozac/go-jsonc"
 	"github.com/sirupsen/logrus"
 	"os"
 	"time"
+	"tv-agg/app/conf"
+	"tv-agg/app/models"
 )
 
 func AggToFile() {
