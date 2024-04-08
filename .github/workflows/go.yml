@@ -28,6 +28,7 @@ jobs:
         ./tv-agg
     - name: 暂存提交
       run: |
+        git pull --rebase
         git config --global user.name 'Suleiman'
         git config --global user.email 'xiayang1900@gmail.com'
         export TZ='Asia/Shanghai'
