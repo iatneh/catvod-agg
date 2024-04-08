@@ -9,6 +9,7 @@ import (
 	"github.com/marcozac/go-jsonc"
 	"github.com/sirupsen/logrus"
 	"os"
+	"time"
 )
 
 func AggToFile() {
@@ -23,7 +24,11 @@ func AggToFile() {
 	bf := bytes.NewBuffer([]byte{})
 	jsonEncoder := json.NewEncoder(bf)
 	jsonEncoder.SetEscapeHTML(false)
-	jsonEncoder.Encode(multiApiConfig)
+	err = jsonEncoder.Encode(multiApiConfig)
+	if err != nil {
+		logrus.Errorf("encoder json err:%s", err)
+		return
+	}
 
 	err = os.WriteFile(conf.AppConf.General.ToFilePath, bf.Bytes(), 0666)
 	if err != nil {
@@ -52,6 +57,7 @@ func aggregationMultiSiteInfo() (*models.MultiApiConfig, error) {
 		Urls: make([]models.SingleApiConfig, 0),
 	}
 	for _, site := range sites {
+		logrus.Infof("get api config,site:%s", site.Name)
 		err := getSiteApiConfig(&totalList, site)
 		if err != nil {
 			continue
@@ -107,6 +113,7 @@ func getSiteApiConfig(totalList *models.MultiApiConfig, site models.SingleApiCon
 // urlCheck 测试链接是否有效
 func urlCheck(url string) error {
 	client := resty.New()
+	client.SetTimeout(10 * time.Second)
 	_, err := client.R().Get(url)
 	return err
 }
