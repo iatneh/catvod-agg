@@ -21,11 +21,11 @@ jobs:
         go-version: '1.20'
 
     - name: 构建
-      run: go build -v ./...
+      run: go build -v -o catvod-agg
 
     - name: 聚合数据
       run: |
-        ./tv-aggregation
+        ./catvod-agg
     - name: 暂存提交
       run: |
         git config --global user.name 'Suleiman'

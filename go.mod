@@ -1,4 +1,4 @@
-module tv-aggregation
+module catvod-agg
 
 go 1.20
 

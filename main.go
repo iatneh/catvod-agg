@@ -1,7 +1,7 @@
 package main
 
 import (
-	"tv-aggregation/app/aggregation"
+	"catvod-agg/app/aggregation"
 )
 
 func main() {
